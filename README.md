@@ -1,2 +1,2 @@
 # Face-Emotion-Recognition
-Real-time facial emotions recognition model deployed as an Instagram filter
+Real-time facial emotions recognition model deployed as a Snapchat filter
