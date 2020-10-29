@@ -10,30 +10,41 @@
 ## How we did dataset construction and preprocessing 
 <p>
 Data Preprocessing Steps:
+
 1) Resizing the images 
 2) Manually cleaning the datasets to remove incorrect expressions
 3) Spliting the data into train ,validation and test(80:10:10)
 4) Applying image augmentation
 5) Haar Cascades to crop out only faces from the images from live feed while getting real time predictions
 
-So Basically the data is from -> https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset we didn’t use the complete dataset as the data was imbalanced we picked out only 4 classes and we manually had to go through all the images in order to clean them and we finally split them into a ratio of 80:10:10 train:test:valid  respectively. So the images are 48x48 gray scale images cropped to face using haarcaascades. 28275 train 3530 train 3532 validation these where the exact no. of images taken from kaggle but the number of images used to train will vary as we have used image generator and manual cleaning was also done. For the parameters used for image data generator u can check the model.ipynb.</p>
+So Basically the data is from -> https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset we didn’t use the complete dataset as the data was imbalanced we picked out only 4 classes and we manually had to go through all the images in order to clean them and we finally split them into a ratio of 80:10:10 train:test:valid  respectively. So the images are 48x48 gray scale images cropped to face using haarcaascades. 28275 train 3530 train 3532 validation these where the exact no. of images taken from kaggle but the number of images used to train will vary as we have used image generator and manual cleaning was also done. For the parameters used for image data generator you can check the [model.ipynb](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/VGG16_Modified/vgg16-modified-fer.ipynb).</p>
+
+
 ## Model construction 
 <p>Deep Learning Model
 After manually pre-processing the dataset, by deleting duplicates and wrongly classified images, we come to the part where we use concepts of Convolutional Neural Network to build and train a model that predicts the facial emotion of any person. The four face emotions are: Happy, Sad, Neutral and Angry. 
+
 The data is split in training and validation sets: 80% Training, 20% Validation. The data is then augmented accordingly using ImageDataGenerator.
+
 VGG-16 was used as the transfer model. After importing it, we set layers.trainable as False, print the model summary and select a favorable output layer, in this case, ‘block5_conv1’. This freezes the transfer learning model so that we can pre-train or ‘warm up’ the layers of our sequential model on the given data before starting the actual training. This helps the sequential model to adjust weights by training on a lower learning rate.
+
 Setting the Hyper Parameters and constants (Only the best parameters are displayed below):
 •	Batch size : 64
+
 •	Image Size : 48 x 48 x 3
+
 •	Optimizers :
 o	RMS Prop (Pre-Train)
 o	Adam
+
 •	Learning Rate : 
 o	Lr1 = 1e-5 (Pre-Train)
 o	Lr2 = 1e-4
+
 •	Epochs 
 o	Epochs 1 = 30 (Pre-Train)
 o	Epochs 2 = 25
+
 •	Loss : Categorical Crossentropy
 
 Defining the Model: Using Sequential, the layers in the model are as follows:
@@ -57,16 +68,20 @@ All the metrics observed during the model training are displayed on one plot:
 ## Instructions to run
 
 * Requirements:
+
    -  The software requirements are listed below:
+
 	- pillow
+
         - numpy==1.16.0
+
         - opencv-python-headless==4.2.0.32
+
 	- streamlit
+
         - tensorflow
 
-
 * Download the zip file from our repository and unzip it at your desired location.
-
 
 * Enter the following line of code in your teminal to run the streamlit script
 
