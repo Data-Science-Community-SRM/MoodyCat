@@ -3,7 +3,7 @@
 	<img src="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true" width=80%/>
 </a>
 	<h2 align="center"> Face-Emotion-Recognition </h2>
-	<h4 align="center"> Real-time facial emotions recognition model deployed in a website using Heroku <h4>
+	<h4 align="center"> Real-time facial emotions recognition model <h4>
 </p>
 
 
@@ -69,17 +69,17 @@ All the metrics observed during the model training are displayed on one plot:
 
 * Requirements:
 
-   -  The software requirements are listed below:
+-  The software requirements are listed below:
 
-	- pillow
+• pillow
 
-        - numpy==1.16.0
+• numpy==1.16.0
 
-        - opencv-python-headless==4.2.0.32
+• opencv-python-headless==4.2.0.32
 
-	- streamlit
+• streamlit
 
-        - tensorflow
+• tensorflow
 
 * Download the zip file from our repository and unzip it at your desired location.
 
