@@ -71,15 +71,15 @@ All the metrics observed during the model training are displayed on one plot:
 
 -  The software requirements are listed below:
 
-• pillow
+   • pillow
 
-• numpy==1.16.0
+   • numpy==1.16.0
 
-• opencv-python-headless==4.2.0.32
+   • opencv-python-headless==4.2.0.32
 
-• streamlit
+   • streamlit
 
-• tensorflow
+   • tensorflow
 
 * Download the zip file from our repository and unzip it at your desired location.
 
