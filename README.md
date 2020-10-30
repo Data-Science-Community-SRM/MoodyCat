@@ -27,6 +27,7 @@ After manually pre-processing the dataset, by deleting duplicates and wrongly cl
 The data is split in training and validation sets: 80% Training, 20% Validation. The data is then augmented accordingly using ImageDataGenerator.
 
 VGG-16 was used as the transfer model. After importing it, we set layers.trainable as False, print the model summary and select a favorable output layer, in this case, ‘block5_conv1’. This freezes the transfer learning model so that we can pre-train or ‘warm up’ the layers of our sequential model on the given data before starting the actual training. This helps the sequential model to adjust weights by training on a lower learning rate.
+> [H5 files of the model](https://drive.google.com/drive/folders/13lUVCPJh0ByVnYawWrTjz5AuYjMNDIj-?usp=sharing)
 
 Setting the Hyper Parameters and constants (Only the best parameters are displayed below):
 •	Batch size : 64
