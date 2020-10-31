@@ -64,8 +64,10 @@ All the metrics observed during the model training are displayed on one plot:
 
 
 </p>
-
-
+<img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/ezgif.com-gif-maker%20(1).gif" width="500" height="500" />
+<p>Happy emotion detected</p>
+<img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/ezgif.com-gif-maker.gif" width="500" height="500" />
+<p>Sad emotion detected</p>
 ## Instructions to run
 
 * Requirements:
