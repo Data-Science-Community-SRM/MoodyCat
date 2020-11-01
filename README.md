@@ -87,9 +87,8 @@ All the metrics observed during the model training are displayed on one plot:
 
 * Enter the following line of code in your teminal to run the streamlit script
 
-```bash
-<Streamlit run app.py >
-```
+1. ''' $ pip install -r requirements.txt '''
+2. ''' $ streamlit run app.py '''
 
 ## Contributors
 
