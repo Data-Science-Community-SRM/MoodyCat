@@ -99,6 +99,9 @@ $ streamlit run app.py
 ![command-2](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/temp2.png)
 
 * STEP 3:You can now view your Streamlit app in your browser. ` Local URL: http://localhost:8501 `
+
+![Output](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/tempsnip.png)
+
 ## Contributors
 
 <table>
