@@ -11,22 +11,27 @@
 <p>
 Data Preprocessing Steps:
 
-1) Resizing the images 
+1) Resizing the images to 48x48 (B/W color channel)
 2) Manually cleaning the datasets to remove incorrect expressions
 3) Spliting the data into train ,validation and test(80:10:10)
-4) Applying image augmentation
-5) Haar Cascades to crop out only faces from the images from live feed while getting real time predictions
+4) Applying image augmentation using image data generator
+5) Haar Cascades to crop out only faces from the images from live feed while getting real-time predictions
 
-So Basically the data is from -> https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset we didn’t use the complete dataset as the data was imbalanced we picked out only 4 classes and we manually had to go through all the images in order to clean them and we finally split them into a ratio of 80:10:10 train:test:valid  respectively. So the images are 48x48 gray scale images cropped to face using haarcaascades. 28275 train 3530 train 3532 validation these where the exact no. of images taken from kaggle but the number of images used to train will vary as we have used image generator and manual cleaning was also done. For the parameters used for image data generator you can check the [model.ipynb](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/VGG16_Modified/vgg16-modified-fer.ipynb).</p>
+The data is from -> https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset but we didn’t use the complete dataset as the data was imbalanced we picked out only 4 classes and we manually had to go through all the images in order to clean them and we finally split them into a ratio of 80:10:10 train:test:valid  respectively. So the images are 48x48 gray scale images cropped to face using haarcascades. 
+28275 train 
+3530 train 
+3532 validation were the number of images taken from kaggle but the number of images used to train will vary as we have used image generator and manually cleaned was also. 
+For the parameters used for image data generator you can check the [model.ipynb](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/VGG16_Modified/vgg16-modified-fer.ipynb).</p>
 
 
 ## Model construction 
 <p>Deep Learning Model
-After manually pre-processing the dataset, by deleting duplicates and wrongly classified images, we come to the part where we use concepts of Convolutional Neural Network to build and train a model that predicts the facial emotion of any person. The four face emotions are: Happy, Sad, Neutral and Angry. 
+After manually pre-processing the dataset, by deleting duplicates and wrongly classified images, we come to the part where we use concepts of Convolutional Neural Network and Transfer learning to build and train a model that predicts the facial emotion of any person. 
+The four face emotions are: Happy, Sad, Neutral and Angry. 
 
 The data is split in training and validation sets: 80% Training, 20% Validation. The data is then augmented accordingly using ImageDataGenerator.
 
-VGG-16 was used as the transfer model. After importing it, we set layers.trainable as False, print the model summary and select a favorable output layer, in this case, ‘block5_conv1’. This freezes the transfer learning model so that we can pre-train or ‘warm up’ the layers of our sequential model on the given data before starting the actual training. This helps the sequential model to adjust weights by training on a lower learning rate.
+VGG-16 was used as the transfer learning model. After importing it, we set layers.trainable as False, and select a favorable output layer, in this case, ‘block5_conv1’. This freezes the transfer learning model so that we can pre-train or ‘warm up’ the layers of our sequential model on the given data before starting the actual training. This helps the sequential model to adjust weights by training on a lower learning rate.
 > [H5 files of the model](https://drive.google.com/drive/folders/13lUVCPJh0ByVnYawWrTjz5AuYjMNDIj-?usp=sharing)
 
 Setting the Hyper Parameters and constants (Only the best parameters are displayed below):
@@ -61,8 +66,6 @@ After pre-training, we set layers.trainable as True for the whole model. Now the
 We were able to achieve a decent validation accuracy of 75% and an accuracy of 85%.
 All the metrics observed during the model training are displayed on one plot: 
  
-
-
 </p>
 <p>Different Emotions Detected:</p>
 <img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/Final-Video.gif" width="1000" height="500" />
