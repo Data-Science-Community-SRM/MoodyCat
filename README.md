@@ -90,12 +90,15 @@ All the metrics observed during the model training are displayed on one plot:
 ```
 $ pip install -r requirements.txt
 ```
+![command-1](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/temp1.png)
 
 * STEP 2:
 ```
 $ streamlit run app.py
 ```
+![command-2](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/temp2.png)
 
+* STEP 3:You can now view your Streamlit app in your browser. ` Local URL: http://localhost:8501 `
 ## Contributors
 
 <table>
