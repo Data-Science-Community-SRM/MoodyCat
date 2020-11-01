@@ -85,10 +85,14 @@ All the metrics observed during the model training are displayed on one plot:
 
 * Download the zip file from our repository and unzip it at your desired location.
 
-* Enter the following line of code in your teminal to run the streamlit script
+## Enter the following line of code in your teminal to run the streamlit script
 
-1. ''' $ pip install -r requirements.txt '''
-2. ''' $ streamlit run app.py '''
+*'''
+$ pip install -r requirements.txt
+'''
+*'''
+$ streamlit run app.py
+'''
 
 ## Contributors
 
