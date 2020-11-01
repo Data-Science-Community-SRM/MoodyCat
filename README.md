@@ -65,7 +65,7 @@ All the metrics observed during the model training are displayed on one plot:
 
 </p>
 <p>Different Emotions Detected:</p>
-<img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/Final-Video.gif" width="500" height="500" />
+<img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/Final-Video.gif" width="1000" height="500" />
 
 ## Instructions to run
 
