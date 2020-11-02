@@ -104,6 +104,11 @@ $ streamlit run app.py
 * STEP 3:You can now view your Streamlit app in your browser. ` Local URL: http://localhost:8501 `
 
 ![Output](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/tempsnip.png)
+## Implementation of Face emotion recognition
+<img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/ezgif.com-gif-maker%20(2).gif" width="400" height="400" />
+<img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/ezgif.com-gif-maker%20(3).gif" width="400" height="400" />
+<img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/ezgif.com-gif-maker%20(4).gif" width="400" height="400" />
+<img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/ezgif.com-gif-maker%20(5).gif" width="400" height="400" />
 
 ## Contributors
 
