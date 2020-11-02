@@ -25,7 +25,7 @@ For the parameters used for image data generator you can check the [model.ipynb]
 
 
 ## Model construction 
-<p>Deep Learning Model
+<p>Deep Learning Model: </br></br>
 After manually pre-processing the dataset, by deleting duplicates and wrongly classified images, we come to the part where we use concepts of Convolutional Neural Network and Transfer learning to build and train a model that predicts the facial emotion of any person. 
 The four face emotions are: Happy, Sad, Neutral and Angry. 
 
