@@ -3,7 +3,7 @@
 	<img src="https://github.com/Data-Science-Community-SRM/template/blob/master/Header.png?raw=true" width=80%/>
 </a>
 	<h2 align="center"> Face-Emotion-Recognition </h2>
-	<h4 align="center"> Real-time facial emotions recognition model <h4>
+	<h4 align="center"> Real-time facial emotions recognition model for music recommendation<h4>
 </p>
 
 
@@ -69,6 +69,13 @@ All the metrics observed during the model training are displayed on one plot:
 </p>
 <p>Different Emotions Detected:</p>
 <img src="https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/Final-Video.gif" width="1000" height="500" />
+
+## Emousic ~ Selenium Automation in Python for Music videos Recommendation based on detected facial emotion
+Using Selenium automation in Python, whenever you make prediction from the constructed vgg16 model, you get word as emotion - 'ANGRY 😡', 'HAPPY 😀', 'NEUTRAL 😐', 'SAD 🙁' which is used in automation for parsing the YouTube webpages using a driver called as 'chromedriver' which automatically clicks the buttons you want as per your facial emotion detected, and redirects you to recommended YouTube video. 
+- So if you're "SAD 🙁", uplift your mood with song videos like ["I'll Meet You There - Sapajou", "Relax - Markvard", "Wake Up (feat. ROMY DYA) - Wataboi"](https://youtu.be/P2mC5i3V0G8)
+- If you're "ANGRY 😡", calm down with ["Maroon 5 - Memories", "The Weeknd - Blinding Lights", "Lloyd P White - Burst Part 2"](https://youtu.be/SlPhMPnQ58k)
+- If you're "HAPPY 😀", groove to songs like ["The cure- Friday I'm in Love", "The Beatles I want to hold your hand", "Beautiful day"](https://youtu.be/mGgMZpGYiy8)
+- For "NEUTRAL 😐" emotions detected, tune in to ["Becky Hill - Space", "Justin Bieber & benny blanco - Lonely", "Little Mix - Happiness"](https://youtu.be/pHHGdz_okBs)
 
 ## Instructions to run
 
