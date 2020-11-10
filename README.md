@@ -19,7 +19,7 @@ Data Preprocessing Steps:
 
 The data is from -> https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset but we didn’t use the complete dataset as the data was imbalanced we picked out only 4 classes and we manually had to go through all the images in order to clean them and we finally split them into a ratio of 80:10:10 train:test:valid  respectively. So the images are 48x48 gray scale images cropped to face using haarcascades. 
 28275 train 
-3530 train 
+3530 test
 3532 validation were the number of images taken from kaggle but the number of images used to train will vary as we have used image generator and manually cleaned was also. 
 For the parameters used for image data generator you can check the [model.ipynb](https://github.com/Data-Science-Community-SRM/Face-Emotion-Recognition/blob/master/VGG16_Modified/vgg16-modified-fer.ipynb).</p>
 
